@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allus Q World - Official Channel Site</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles for the Inter font and smooth scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f9fb; /* Light background */
+            color: #1f2937; /* Dark text */
+        }
+        /* Custom scrollbar for aesthetics */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #4f46e5;
+            border-radius: 10px;
+        }
+        .text-shadow {
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        .glow-hover:hover {
+            box-shadow: 0 0 15px rgba(79, 70, 229, 0.8);
+            transform: translateY(-2px);
+            transition: all 0.3s ease;
+        }
+        /* Custom class for the circular logo background and size */
+        .logo-circle {
+            width: 128px; /* w-32 */
+            height: 128px; /* h-32 */
+            border-radius: 9999px; /* rounded-full */
+            overflow: hidden;
+            border: 4px solid #818cf8; /* border-secondary */
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* shadow-xl */
+        }
+        .logo-nav {
+            width: 32px; /* w-8 */
+            height: 32px; /* h-8 */
+            border-radius: 9999px;
+            overflow: hidden;
+        }
+        .logo-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': '#4f46e5', /* Indigo */
+                        'secondary': '#818cf8', /* Light Indigo */
+                        'accent': '#10b981', /* Emerald for buttons/highlights */
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+
+<!-- Header/Navigation Bar -->
+<header class="sticky top-0 z-50 bg-white shadow-lg backdrop-blur-sm bg-opacity-90">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+            <!-- Logo/Channel Name - REPLACED SVG WITH LOGO IMAGE -->
+            <a href="#" class="flex items-center space-x-2">
+                <!-- Navigation Bar Logo (small) -->
+                <div class="logo-nav">
+                    <!-- Path 1: Using the content fetch ID for reliable loading -->
+                    <img src="uploaded:logo.PNG-895be148-e478-4102-bfd5-bb3ff889ffb0" alt="Allus Q World Logo" class="logo-image" onerror="this.onerror=null;this.src='https://placehold.co/32x32/4f46e5/ffffff?text=AQ'">
+                </div>
+                <span class="text-xl font-extrabold tracking-tight text-gray-900">Allus Q World</span>
+            </a>
+            
+            <!-- Navigation Links (Hidden on small screens) -->
+            <nav class="hidden md:flex space-x-8">
+                <a href="#about" class="text-gray-600 hover:text-primary transition duration-300">About</a>
+                <a href="#content" class="text-gray-600 hover:text-primary transition duration-300">Content</a>
+                <a href="#contact" class="text-gray-600 hover:text-primary transition duration-300">Socials</a>
+            </nav>
+
+            <!-- CTA Button -->
+            <a href="https://www.youtube.com/@allusqworld1756" target="_blank" class="hidden sm:inline-block bg-accent text-white py-2 px-4 rounded-full text-sm font-semibold hover:bg-emerald-600 transition duration-300 shadow-md glow-hover">
+                Subscribe Now
+            </a>
+        </div>
+    </div>
+</header>
+
+<main>
+    
+    <!-- Hero Section (Channel Introduction) -->
+    <section id="hero" class="bg-primary text-white py-20 sm:py-32 flex items-center justify-center">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <!-- Profile/Avatar Placeholder - REPLACED TEXT PLACEHOLDER WITH LOGO IMAGE -->
+            <div class="mb-6 mx-auto logo-circle bg-white">
+                <!-- Path 2: Using the content fetch ID for reliable loading -->
+                <img src="uploaded:logo.PNG-895be148-e478-4102-bfd5-bb3ff889ffb0" alt="Allus Q World Logo" class="logo-image" onerror="this.onerror=null;this.src='https://placehold.co/128x128/4f46e5/ffffff?text=AQW'">
+            </div>
+
+            <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight mb-4 text-shadow">
+                Welcome to Allus Q World!
+            </h1>
+            <p class="text-lg sm:text-xl text-secondary max-w-3xl mx-auto mb-8">
+                Your daily dose of insight into software development, creative design, and digital trends.
+                Let's build something amazing together.
+            </p>
+            <div class="flex justify-center space-x-4">
+                <a href="#content" class="bg-white text-primary font-bold py-3 px-8 rounded-full shadow-lg hover:bg-gray-100 transition duration-300 glow-hover">
+                    Watch Latest Video
+                </a>
+                <a href="#contact" class="bg-secondary text-white font-bold py-3 px-8 rounded-full border border-secondary hover:bg-primary transition duration-300 glow-hover">
+                    Connect With Me
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 sm:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:grid lg:grid-cols-2 lg:gap-12 items-center">
+                <!-- Text Content -->
+                <div class="mb-10 lg:mb-0">
+                    <span class="text-primary font-semibold text-sm uppercase tracking-wider">My Mission</span>
+                    <h2 class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+                        A Hub for Digital Creatives
+                    </h2>
+                    <p class="mt-4 text-gray-600 text-lg">
+                        I started Allus Q World to break down complex topics into actionable, easy-to-understand content. Whether you're a beginner learning to code or a seasoned professional looking for new design inspiration, this is your resource.
+                    </p>
+                    <p class="mt-4 text-gray-600">
+                        We cover everything from front-end frameworks and UI/UX design principles to productivity tips and tech reviews. My goal is to empower you to create high-quality digital products and grow your own creative vision.
+                    </p>
+                    <a href="#content" class="mt-6 inline-block text-primary font-semibold hover:text-accent transition duration-300">
+                        See All Topics &rarr;
+                    </a>
+                </div>
+
+                <!-- Featured Image/Visual -->
+                <div class="relative">
+                    <!-- Placeholder Visual (replace with an actual image of yourself or your work) -->
+                    <div class="bg-gray-100 rounded-xl shadow-2xl p-6 h-80 flex items-center justify-center transform hover:scale-[1.01] transition duration-500 border border-gray-200">
+                        <svg class="w-20 h-20 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L19.5 7.25M9.75 17H5.25M9.75 17V5.25"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4c.75 0 1.5.75 1.5 1.5v9c0 .75-.75 1.5-1.5 1.5h-3c-.75 0-1.5-.75-1.5-1.5v-9c0-.75.75-1.5 1.5-1.5h3z"></path></svg>
+                        <span class="absolute text-lg text-gray-400 font-medium">Your Profile Photo Here</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content/Featured Section -->
+    <section id="content" class="py-16 sm:py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <span class="text-primary font-semibold text-sm uppercase tracking-wider">Latest & Greatest</span>
+                <h2 class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+                    Featured Content
+                </h2>
+                <p class="mt-4 text-lg text-gray-600">
+                    Don't miss the newest videos and most popular tutorials from the channel.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Content Card 1 (Latest Video) -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transition duration-300 transform hover:shadow-xl hover:scale-[1.02]">
+                    <!-- Video Embed Placeholder (Replace URL with your actual YouTube embed link) -->
+                    <div class="aspect-w-16 aspect-h-9 bg-gray-800 h-48">
+                        <!-- Note: The iframe link is currently a placeholder video. You should replace the 'src' attribute with the embed code for your latest video. -->
+                        <iframe class="w-full h-full" src="https://www.youtube.com/embed/dQw4w9WgXcQ?controls=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="p-6">
+                        <span class="text-sm font-semibold text-accent uppercase">Tutorial</span>
+                        <h3 class="mt-2 text-xl font-bold text-gray-900 line-clamp-2">
+                            The Ultimate Guide to Responsive Tailwind CSS Layouts
+                        </h3>
+                        <p class="mt-3 text-gray-500 line-clamp-3">
+                            Learn how to leverage responsive utility classes in Tailwind to build beautiful, mobile-first websites in record time.
+                        </p>
+                        <a href="https://www.youtube.com/@allusqworld1756" target="_blank" class="mt-4 inline-flex items-center text-primary font-semibold hover:text-accent transition duration-300">
+                            Watch Video
+                            <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Content Card 2 (Popular Video) -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transition duration-300 transform hover:shadow-xl hover:scale-[1.02]">
+                    <div class="aspect-w-16 aspect-h-9 bg-gray-800 h-48 flex items-center justify-center">
+                        <span class="text-white text-lg">Podcast Episode 42</span>
+                    </div>
+                    <div class="p-6">
+                        <span class="text-sm font-semibold text-accent uppercase">Podcast</span>
+                        <h3 class="mt-2 text-xl font-bold text-gray-900 line-clamp-2">
+                            Interview with a Silicon Valley Product Manager
+                        </h3>
+                        <p class="mt-3 text-gray-500 line-clamp-3">
+                            We discuss the future of AI in product development and how to land your dream job at a top tech company.
+                        </p>
+                        <a href="https://www.youtube.com/@allusqworld1756" target="_blank" class="mt-4 inline-flex items-center text-primary font-semibold hover:text-accent transition duration-300">
+                            Listen Now
+                            <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Content Card 3 (Blog/Article Placeholder) -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transition duration-300 transform hover:shadow-xl hover:scale-[1.02]">
+                    <div class="aspect-w-16 aspect-h-9 bg-gray-800 h-48 flex items-center justify-center">
+                        <span class="text-white text-lg">Blog Post Image</span>
+                    </div>
+                    <div class="p-6">
+                        <span class="text-sm font-semibold text-accent uppercase">Article</span>
+                        <h3 class="mt-2 text-xl font-bold text-gray-900 line-clamp-2">
+                            5 Underrated VS Code Extensions for Faster Coding
+                        </h3>
+                        <p class="mt-3 text-gray-500 line-clamp-3">
+                            Boost your productivity instantly with these powerful, yet often overlooked, tools for modern web development.
+                        </p>
+                        <a href="https://www.youtube.com/@allusqworld1756" target="_blank" class="mt-4 inline-flex items-center text-primary font-semibold hover:text-accent transition duration-300">
+                            Read More
+                            <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12 text-center">
+                <a href="https://www.youtube.com/@allusqworld1756/videos" target="_blank" class="inline-block bg-primary text-white py-3 px-8 rounded-full text-lg font-semibold hover:bg-indigo-700 transition duration-300 shadow-md glow-hover">
+                    View All Content
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Socials/Contact Section -->
+    <section id="contact" class="py-16 sm:py-24 bg-white">
+        <div class="max-w-xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+                Stay Connected
+            </h2>
+            <p class="mt-4 text-lg text-gray-600">
+                Follow me on all my platforms to get real-time updates and behind-the-scenes content.
+            </p>
+            
+            <!-- Social Icons -->
+            <div class="mt-8 flex justify-center space-x-6">
+                <!-- YouTube -->
+                <a href="https://www.youtube.com/@allusqworld1756" target="_blank" class="text-gray-500 hover:text-red-600 transition duration-300 transform hover:scale-110" aria-label="YouTube">
+                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.273 15.356c-.027.098-.106.183-.243.256-.475.253-3.664.253-6.03 0-2.366-.253-5.555-.253-6.03 0-.137-.073-.216-.158-.243-.256-.039-.142-.059-.441-.059-1.296v-4.12c0-.855.02-1.154.059-1.296.027-.098.106-.183.243-.256.475-.253 3.664-.253 6.03 0 2.366.253 5.555.253 6.03 0 .137.073.216.158.243.256.039.142.059.441.059 1.296v4.12c0 .855-.02 1.154-.059 1.296zM10.5 14.5l4.5-2.5-4.5-2.5v5z"></path></svg>
+                </a>
+                <!-- Twitter/X -->
+                <a href="https://twitter.com/YourHandle" target="_blank" class="text-gray-500 hover:text-gray-900 transition duration-300 transform hover:scale-110" aria-label="Twitter">
+                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.947 8.358c-.28.124-1.895.845-3.328 1.135 1.554-.95 2.597-2.617 3.12-4.508-1.503.888-3.168 1.487-4.954 1.834-1.423-1.517-3.447-2.464-5.69-2.464-4.55 0-8.24 3.69-8.24 8.24 0 .645.076 1.272.222 1.874-6.84-2.146-12.898-7.228-14.39-14.075-.705 1.205-1.096 2.593-1.096 4.095 0 2.858 1.455 5.376 3.666 6.846-.867-.027-1.68-.266-2.457-.67v.104c0 3.996 2.842 7.332 6.618 8.093-.687.188-1.41.289-2.155.289-.526 0-1.037-.05-1.534-.144.978 3.328 3.824 5.748 7.188 5.814-2.822 2.21-6.386 3.535-10.278 3.535-.668 0-1.327-.039-1.979-.115 3.655 2.348 7.973 3.725 12.634 3.725 15.166 0 23.498-12.552 23.498-23.498 0-.358-.008-.714-.025-1.068.163-.146.326-.305.488-.474z"></path></svg>
+                </a>
+                <!-- Instagram -->
+                <a href="https://instagram.com/YourHandle" target="_blank" class="text-gray-500 hover:text-pink-600 transition duration-300 transform hover:scale-110" aria-label="Instagram">
+                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-4.148 20.015c-.266 0-.532-.019-.8-.057-.59-.092-1.085-.355-1.453-.723-.368-.368-.631-.863-.723-1.453-.038-.268-.057-.534-.057-.8v-7.97c0-.266.019-.532.057-.8.092-.59.355-1.085.723-1.453.368-.368.863-.631 1.453-.723.268-.038.534-.057.8-.057h7.97c.266 0 .532.019.8.057.59.092 1.085.355 1.453.723.368.368.631.863.723 1.453.038.268.057.534.057.8v7.97c0 .266-.019.532-.057.8-.092.59-.355 1.085-.723 1.453-.368.368-.863.631-1.453.723-.268.038-.534.057-.8.057h-7.97zm8.47-5.042c0 2.222-1.803 4.025-4.025 4.025-2.222 0-4.025-1.803-4.025-4.025s1.803-4.025 4.025-4.025 4.025 1.803 4.025 4.025zm-4.025-2.025c-1.111 0-2.008.9-2.008 2.008s.897 2.008 2.008 2.008 2.008-.9 2.008-2.008-.897-2.008-2.008-2.008zm4.722-3.79c.55 0 .998.448.998.998s-.448.998-.998.998-.998-.448-.998-.998.448-.998.998-.998z"></path></svg>
+                </a>
+                <!-- TikTok/Twitch/Other (Placeholder) -->
+                <a href="https://twitch.tv/YourHandle" target="_blank" class="text-gray-500 hover:text-purple-600 transition duration-300 transform hover:scale-110" aria-label="Twitch">
+                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm3.328 11.828l-2.738 2.738-3.088-3.088v3.088h-1.5v-7.5h5.45c.828 0 1.5.672 1.5 1.5v4.262h-1.638zm-1.638-2.738v-1.5h-3.95v1.5h3.95z"></path></svg>
+                </a>
+            </div>
+            
+            <a href="mailto:your.email@example.com" class="mt-8 inline-block text-primary text-lg font-medium hover:text-accent transition duration-300">
+                your.email@example.com
+            </a>
+        </div>
+    </section>
+
+</main>
+
+<!-- Footer -->
+<footer class="bg-gray-800 text-white py-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <p class="text-gray-400">&copy; 2025 Allus Q World. All rights reserved. | <a href="#" class="hover:text-primary">Privacy Policy</a></p>
+        <p class="mt-2 text-sm text-gray-500">
+            Designed and built with ❤️ using Tailwind CSS.
+        </p>
+    </div>
+</footer>
+
+<script>
+    // Simple JavaScript to handle mobile menu if you decide to add one later
+    // For now, this is just a placeholder, as the header is MD-only nav.
+    console.log("Website loaded successfully.");
+</script>
+</body>
+</html>
